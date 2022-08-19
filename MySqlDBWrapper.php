@@ -1,15 +1,17 @@
 <?php
 
 /**
- * MySqlDBWrapper Class
+ * MySqlDBWrapper - MySQL Database Access
+ * PHP Version 7.4
  *
  * @category  MySQL Database Access
- * @author    Alberto Andreo <alberto.andreo@gmail.com>
- * @copyright Copyright (c) 2022-2030
- * @license   http://opensource.org/licenses/gpl-3.0.html GNU Public License
- * @version   1.0.2
+ * @see         https://github.com/PHPMailer/PHPMailer/ The PHPMailer GitHub project
+ *
+ * @author      Alberto Andreo <alberto.andreo@gmail.com>
+ * @copyright   2022 - 2030 Alberto Andreo
+ * @version     1.0.2
+ * @license     http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
  */
-
 class MySqlDBWrapper {
 
     /**
@@ -235,6 +237,7 @@ class MySqlDBWrapper {
      * @param string $tableName
      *
      * @return int
+     * @return Exceptions
      */
     public function CountTableRows($tableName) {
         $this->Query("SELECT * FROM $tableName") ;
