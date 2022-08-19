@@ -154,9 +154,9 @@ class MySqlDBWrapper {
      */    
     private function getMySQLError() {
 
-		return $this->mySqlError ;
+        return $this->mySqlError ;
 
-	}
+    }
 
     /**
      * Private setter for property AffectedRows
@@ -178,9 +178,9 @@ class MySqlDBWrapper {
      */    
     private function getAffectedRows() {
 
-		return $this->AffectedRows ;
+        return $this->AffectedRows ;
 
-	}
+    }
 
     /**
      * Method to connect the MySQL DB
