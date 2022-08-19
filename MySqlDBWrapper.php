@@ -4,7 +4,7 @@
  * MySqlDBWrapper - MySQL Database Access
  * PHP Version 7.4
  *
- * @category  MySQL Database Access
+ * @category    MySQL Database Access
  * @see         https://github.com/PHPMailer/PHPMailer/ The PHPMailer GitHub project
  *
  * @author      Alberto Andreo <alberto.andreo@gmail.com>
@@ -118,7 +118,9 @@ class MySqlDBWrapper {
      * @return void
      */    
     private function setMySQLErrNo($MySQLErrNo) {
+
         $this->MySQLErrNo = $MySQLErrNo ;
+
     }
 
     /**
@@ -127,7 +129,9 @@ class MySqlDBWrapper {
      * @return int
      */    
     private function getMySQLErrNo() {
+
 		return $this->MySQLErrNo ;
+
 	}
 
     /**
@@ -138,7 +142,9 @@ class MySqlDBWrapper {
      * @return void
      */    
     private function setMySQLError($mySqlError) {
+
         $this->mySqlError = $mySqlError ;
+
     }
 
     /**
@@ -147,7 +153,9 @@ class MySqlDBWrapper {
      * @return string
      */    
     private function getMySQLError() {
+
 		return $this->mySqlError ;
+
 	}
 
     /**
@@ -169,7 +177,9 @@ class MySqlDBWrapper {
      * @return int
      */    
     private function getAffectedRows() {
+
 		return $this->AffectedRows ;
+
 	}
 
     /**
@@ -240,8 +250,11 @@ class MySqlDBWrapper {
      * @return Exceptions
      */
     public function CountTableRows($tableName) {
+
         $this->Query("SELECT * FROM $tableName") ;
+
         return($this->getAffectedRows()) ;
+
     }
 
     /**
