@@ -11,6 +11,7 @@ MySqlDBWrapper -- Powerful and easy to use MySQLi wrapper for PHP
 **[Closing the connection](#closing-the-connection)**  
 **[Count table rows](#count-table-rows)**  
 **[Get affected rows](#get-affected-rows)**  
+<hr>
 
 ### Support Me
 
