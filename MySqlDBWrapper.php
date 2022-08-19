@@ -1,16 +1,16 @@
 <?php
 
 /**
- * MySqlDBWrapper - MySQL Database Access
+ * MySqlDBWrapper - PHP class myisqli wrapper
  * PHP Version 7.4
  *
  * @category    MySQL Database Access
- * @see         https://github.com/halford67/MySqlDBWrapper.git
+ * @see         https://github.com/halford67/MySqlDBWrapper
  *
  * @author      Alberto Andreo <alberto.andreo@gmail.com>
  * @copyright   2022 - 2030 Alberto Andreo
  * @version     1.0.2
- * @license     http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license     http://www.gnu.org/copyleft/lesser.html - GNU Lesser General Public License
  */
 class MySqlDBWrapper {
 
