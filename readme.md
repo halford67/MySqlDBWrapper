@@ -35,7 +35,7 @@ Advanced initialization:
 ```php
 $MyDB = new MySqlDBWrapper($DbHost, $DbUser, $DbPassword, $DbName, $DbCollation) ;
 ```
-*DbCollation* parameter is optional.
+*DbCollation* parameter is optional. On success returns a mysqli object.
 
 In the event of MySQL errors when connecting to the database, an exception is thrown.
 
