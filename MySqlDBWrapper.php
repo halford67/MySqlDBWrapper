@@ -5,7 +5,7 @@
  * PHP Version 7.4
  *
  * @category    MySQL Database Access
- * @see         https://github.com/PHPMailer/PHPMailer/ The PHPMailer GitHub project
+ * @see         https://github.com/halford67/MySqlDBWrapper.git
  *
  * @author      Alberto Andreo <alberto.andreo@gmail.com>
  * @copyright   2022 - 2030 Alberto Andreo
