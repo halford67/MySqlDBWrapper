@@ -129,8 +129,10 @@ class MySqlDBWrapper {
      * @return int
      */    
     private function getMySQLErrNo() {
-		return $this->MySQLErrNo ;
-	}
+
+        return $this->MySQLErrNo ;
+
+    }
 
     /**
      * Private setter for property mySqlError
