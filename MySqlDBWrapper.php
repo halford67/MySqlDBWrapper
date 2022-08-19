@@ -94,7 +94,7 @@ class MySqlDBWrapper {
     function __construct($DbHost = 'localhost', $DbUser = null, $DbPassword = null, $DbName = null, $DbCollation = 'utf8mb4') {
 
         $this->_connected = false ;
-		$this->_dbHost = $DbHost ;
+	$this->_dbHost = $DbHost ;
         $this->_dbUser = $DbUser ;
         $this->_dbPassword = $DbPassword ;
         $this->_dbName = $DbName ;
@@ -127,8 +127,8 @@ class MySqlDBWrapper {
      * @return int
      */    
     private function getMySQLErrNo() {
-		return $this->MySQLErrNo ;
-	}
+	return $this->MySQLErrNo ;
+    }
 
     /**
      * Private setter for property mySqlError
