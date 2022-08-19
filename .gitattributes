@@ -1,1 +1,2 @@
+# .gitattribute file
 /tests/ export-ignore
