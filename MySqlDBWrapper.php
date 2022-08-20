@@ -84,13 +84,13 @@ class MySqlDBWrapper {
     */    
     public $AffectedRows ;
 
-   /**
-     * @param string $DbHost
-     * @param string $DbUser
-     * @param string $DbPassword
-     * @param string $DbName
-     * @param string $DbCollation
-     */    
+    /**
+    * @param string $DbHost
+    * @param string $DbUser
+    * @param string $DbPassword
+    * @param string $DbName
+    * @param string $DbCollation
+    */    
     function __construct($DbHost = 'localhost', $DbUser = null, $DbPassword = null, $DbName = null, $DbCollation = 'utf8mb4') {
 
         $this->_connected = false ;
@@ -111,12 +111,12 @@ class MySqlDBWrapper {
     }
 
     /**
-     * Private setter for property mySqlErrNo
-     *
-     * @param int $MySQLErrNo
-     *
-     * @return void
-     */    
+    * Private setter for property mySqlErrNo
+    *
+    * @param int $MySQLErrNo
+    *
+    * @return void
+    */    
     private function setMySQLErrNo($MySQLErrNo) {
 
         $this->MySQLErrNo = $MySQLErrNo ;
@@ -124,10 +124,10 @@ class MySqlDBWrapper {
     }
 
     /**
-     * Private getter for property mySqlErrNo
-     *
-     * @return int
-     */    
+    * Private getter for property mySqlErrNo
+    *
+    * @return int
+    */    
     private function getMySQLErrNo() {
 
         return $this->MySQLErrNo ;
@@ -135,12 +135,12 @@ class MySqlDBWrapper {
     }
 
     /**
-     * Private setter for property mySqlError
-     *
-     * @param string $mySqlError
-     *
-     * @return void
-     */    
+    * Private setter for property mySqlError
+    *
+    * @param string $mySqlError
+    *
+    * @return void
+    */    
     private function setMySQLError($mySqlError) {
 
         $this->mySqlError = $mySqlError ;
@@ -148,10 +148,10 @@ class MySqlDBWrapper {
     }
 
     /**
-     * Private getter for property mySqlError
-     *
-     * @return string
-     */    
+    * Private getter for property mySqlError
+    *
+    * @return string
+    */    
     private function getMySQLError() {
 
         return $this->mySqlError ;
@@ -159,12 +159,12 @@ class MySqlDBWrapper {
     }
 
     /**
-     * Private setter for property AffectedRows
-     *
-     * @param int $AffectedRows
-     *
-     * @return void
-     */    
+    * Private setter for property AffectedRows
+    *
+    * @param int $AffectedRows
+    *
+    * @return void
+    */    
     private function setAffectedRows($AffectedRows) {
 
         $this->AffectedRows = $AffectedRows ;
@@ -172,10 +172,10 @@ class MySqlDBWrapper {
     }
 
     /**
-     * Private getter for property AffectedRows
-     *
-     * @return int
-     */    
+    * Private getter for property AffectedRows
+    *
+    * @return int
+    */    
     private function getAffectedRows() {
 
         return $this->AffectedRows ;
@@ -183,11 +183,11 @@ class MySqlDBWrapper {
     }
 
     /**
-     * Method to connect the MySQL DB
-     *
-     * @throws Exceptions
-     * @return void
-     */
+    * Method to connect the MySQL DB
+    *
+    * @throws Exceptions
+    * @return void
+    */
     private function Connect() {
 
         $this->_connected = false ;
@@ -210,13 +210,13 @@ class MySqlDBWrapper {
     }
 
     /**
-     * Method to perform queries against the DB
-     *
-     * @param string $sql
-     *
-     * @throws Exceptions
-     * @return mysqli_result
-     */
+    * Method to perform queries against the DB
+    *
+    * @param string $sql
+    *
+    * @throws Exceptions
+    * @return mysqli_result
+    */
     public function Query($sql) {
 
         if (!$this->_connected)
@@ -242,13 +242,13 @@ class MySqlDBWrapper {
     }
 
     /**
-     * Method to get the total number of rows from the given table name
-     *
-     * @param string $tableName
-     *
-     * @return int
-     * @return Exceptions
-     */
+    * Method to get the total number of rows from the given table name
+    *
+    * @param string $tableName
+    *
+    * @return int
+    * @return Exceptions
+    */
     public function CountTableRows($tableName) {
 
         $this->Query("SELECT * FROM $tableName") ;
@@ -258,10 +258,10 @@ class MySqlDBWrapper {
     }
 
     /**
-     * Method to close the database connection. Returns true in case of success or false on failure
-     *
-     * @return bool
-     */
+    * Method to close the database connection. Returns true in case of success or false on failure
+    *
+    * @return bool
+    */
     public function Disconnect() {
 
         $this->_connected = false ;
