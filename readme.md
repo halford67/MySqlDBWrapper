@@ -12,7 +12,6 @@ MySqlDBWrapper -- Powerful and easy to use MySQLi wrapper for PHP
 **[Count table rows](#count-table-rows)**  
 **[Get affected rows](#get-affected-rows)**  
 
-<hr>
 ### Support Me
 
 If you like this class and use it in your PHP applications, I invite you to perform even a small donation. It would be greatly appreciated for all the time I have spent testing, documenting and sharing this code.
@@ -25,7 +24,6 @@ In order to use this class within your code, you must first include it in your P
 ```php
 require_once ('MySqlDBWrapper.php');
 ```
-<hr>
 ### How to instantiate the class
 Simple initialization with *utf8mb4* charset set by default:
 ```php
@@ -40,7 +38,6 @@ $MyDB = new MySqlDBWrapper($DbHost, $DbUser, $DbPassword, $DbName, $DbCollation)
 
 In the event of MySQL errors when connecting to the database, an exception is thrown.
 
-<hr>
 ### Insert Query
 In order to insert new rows in a given table, call the *Query* method as shown in the example below, passing the SQL query as an input argument:
 ```php
@@ -49,7 +46,6 @@ $MyDB->Query("Insert Into MyTable Set MyColumn1='MyValue1', MyColumn2='MyValue2'
 
 In the event of MySQL errors executing the given query, an exception is thrown.
 
-<hr>
 ### Update Query
 In order to update rows in a given table, call the *Query* method as shown in the example below, passing the SQL query as an input argument:
 ```php
@@ -83,13 +79,11 @@ $result->close();
 
 In the event of MySQL errors executing the given query, an exception is thrown.
 
-<hr>
 ### Closing the connection
 In order to close the database connection handle, it is sufficient to call the *Disconnect* method. In case of success return the value *true* otherwise *false*.
 ```php
 $MyDB->Disconnect() ;
 ```
-<hr>
 ### Count table rows
 The simplest way to count how many rows are contained in a given table or view is to call the *CountTableRows* method. In the example below, the variable *$rowsCount* will contain the total number of rows found in a specific table or view.
 ```php
@@ -97,7 +91,6 @@ $rowsCount = $MyDB->CountTableRows('tableName') ;
 ```
 In the event of MySQL errors executing the given query, an exception is thrown.
 
-<hr>
 ### Get affected rows
 Returns the total number of rows that have been processed by the last query.
 ```php
