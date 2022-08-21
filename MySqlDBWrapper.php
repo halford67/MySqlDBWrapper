@@ -93,7 +93,6 @@ class MySqlDBWrapper {
     */    
     function __construct($DbHost = 'localhost', $DbUser = null, $DbPassword = null, $DbName = null, $DbCollation = 'utf8mb4') {
 
-        $this->_connected = false ;
         $this->_dbHost = $DbHost ;
         $this->_dbUser = $DbUser ;
         $this->_dbPassword = $DbPassword ;
@@ -101,6 +100,7 @@ class MySqlDBWrapper {
         $this->_dbCollation = $DbCollation ;
 
         // Initialize default values for all object properties
+        $this->_connected = false ;
         $this->setMySQLErrNo(0) ;
         $this->setMySQLError('') ;
         $this->setAffectedRows(0) ;
@@ -221,8 +221,6 @@ class MySqlDBWrapper {
 
         if (!$this->_connected)
             throw new Exception('Impossible to query the DB without a connection');
-
-        echo "Query: $sql\n" ;
 
         // Try to execute the given SQL query and in case of errors throws an exception
         if (!$this->_mysqli->real_query($sql)) {
