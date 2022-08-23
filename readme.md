@@ -38,7 +38,7 @@ $MyDB = new MySqlDBWrapper($DbHost, $DbUser, $DbPassword, $DbName, $DbCollation)
 
 ```php
 try {
-    $MyDB = new MySqlDBWrapper($DBHOST, $DBUSER, $DBPWRD, $DBNAME) ;
+    $MyDB = new MySqlDBWrapper($DbHost, $DbUser, $DbPassword, $DbName) ;
 }
 catch (Exception $e) {
     echo "Exception: " . $e->getMessage() . "\n" ;
