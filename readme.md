@@ -36,6 +36,15 @@ $MyDB = new MySqlDBWrapper($DbHost, $DbUser, $DbPassword, $DbName, $DbCollation)
 ```
 *DbCollation* parameter is optional. On success returns a mysqli object.
 
+```php
+try {
+    $MyDB = new MySqlDBWrapper($DBHOST, $DBUSER, $DBPWRD, $DBNAME) ;
+}
+catch (Exception $e) {
+    echo "Exception: " . $e->getMessage() . "\n" ;
+}
+```
+
 In the event of MySQL errors when connecting to the database, an exception is thrown.
 
 ### Insert Query
